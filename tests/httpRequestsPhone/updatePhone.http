@@ -1,0 +1,12 @@
+
+
+PATCH http://localhost:5000/phones/11
+Content-Type: application/json
+
+{
+    "brand": "Sams", 
+    "model": "S21", 
+    "price": "1900", 
+    "color": "Black", 
+    "manufactured_year": "2026"
+}

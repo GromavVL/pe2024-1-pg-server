@@ -1,0 +1,23 @@
+{
+  "name": "pg-server",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "http-errors": "^2.0.0",
+    "pg": "^8.13.0",
+    "query-parser-express": "^1.0.7",
+    "yup": "^1.4.0"
+  }
+}

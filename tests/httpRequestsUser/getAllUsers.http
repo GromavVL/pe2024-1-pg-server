@@ -1,0 +1,5 @@
+### 200 []
+GET http://localhost:5000/users?page=1&results=5
+
+### 200 []
+GET http://localhost:5000/users?page=5.5&results=-50
