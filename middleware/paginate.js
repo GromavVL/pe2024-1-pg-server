@@ -19,16 +19,19 @@ module.exports.paginateUsers = async (req, res, next) => {
   const offset = (page - 1) * results;
 
   req.pagination = { limit, offset };
+  console.log('req.pagination  User:>> ', req.pagination);
   next();
 };
 
 module.exports.paginatePhones = async (req, res, next) => {
   let { page = 1, results = 10 } = req.query;
-
+  console.log('page, results :>> ', page, results);
   const pagination = {
     limit: Number(results),
-    page: (page - 1) * results,
+    offset: (page - 1) * results,
   };
+
   req.pagination = pagination;
+  console.log('req.pagination Phone:>> ', req.pagination);
   next();
 };

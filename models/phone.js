@@ -44,7 +44,7 @@ class Phone {
         LIMIT $1 OFFSET $2
       `;
       const foundPhone = await Phone.pool.query(query, [limit, offset]);
-      console.log('foundPhone :>> ', foundPhone);
+      // console.log('foundPhone :>> ', foundPhone);
       return foundPhone.rows;
     } catch (err) {
       console.log('err :>> ', err);

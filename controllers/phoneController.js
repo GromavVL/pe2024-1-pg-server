@@ -43,7 +43,6 @@ module.exports.deletePhoneById = async (req, res, next) => {
 
   try {
     const deleePhone = await Phone.deleteById(phoneId);
-    console.log('deleePhone :>> ', deleePhone);
     res.status(200).send(deleePhone);
   } catch (err) {
     console.log('err :>> ', err);
